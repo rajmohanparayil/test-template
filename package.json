@@ -1,0 +1,43 @@
+{
+  "name": "ng1-template",
+  "version": "1.0.0",
+  "description": "AngularJS, Typescript and Gulp template for large applications",
+  "scripts": {
+    "postinstall": "bower install && typings install && gulp setup",
+    "start": "gulp serve",
+    "build": "gulp build",
+    "build-dist": "gulp build-dist --env=prod",
+    "clean": "gulp clean",
+    "code": "gulp code",
+    "compile": "gulp compile",
+    "lint": "gulp lint",
+    "serve-dist": "gulp serve-dist",
+    "vet": "gulp vet",
+    "swagger": "swagen",
+    "update": "npm un --save-dev ng1-template-gulp && npm i --save-dev ng1-template-gulp"
+  },
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-template/ng1-template.git"
+  },
+  "author": "Angular Template",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/angular-template/ng1-template/issues"
+  },
+  "homepage": "https://github.com/angular-template/ng1-template#readme",
+  "devDependencies": {
+    "@types/node": "0.0.1",
+    "bower": "^1.8.0",
+    "gulp": "^3.9.0",
+    "ng1-template-gulp": "^1.11.0-beta.2",
+    "swagen": "0.0.16",
+    "swagen-ng1-http": "0.0.30",
+    "typings": "^2.0.0"
+  },
+  "dependencies": {
+    "compression": "^1.6.0",
+    "express": "^4.13.3"
+  }
+}
